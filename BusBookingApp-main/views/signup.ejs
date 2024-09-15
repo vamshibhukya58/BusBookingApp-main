@@ -1,0 +1,343 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      /* overflow-y: hidden; */
+    }
+    /* Add your custom styles here */
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    .signin-container {
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+      border-radius: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .signin-container:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.787);
+    }
+
+    .btn-outline-light {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome JS (optional) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <title>SnapSeats</title>
+</head>
+
+<body>
+  <!-- Section: Design Block -->
+  <section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            <span style="text-align: center;">SnapSeats</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Embark on a journey of simplicity and convenience with our bus booking platform – where every click takes you closer to your next adventure.
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+          <div class="card bg-glass "style="border-radius: 1rem;">
+            <div class="card-body px-4 py-5 px-md-5 signin-container">
+              <form action="/signup" method="post">
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+               
+                  <input type="text" id="form3Example1" class="form-control"  name="name" placeholder="Name" />
+                     
+                </div>
+              </div>
+              <div class="col-md-6 mb-4">
+                <div class="form-outline">
+                  <input type="number" id="form3Example2" class="form-control" name="contact"  placeholder="contact" />
+                  
+                </div>
+              </div>
+            </div>
+
+            <!-- Email input -->
+            <div class="form-outline mt-3 mb-5">
+              <input type="email" id="form3Example3" class="form-control" name="email"  placeholder="Email address" />
+              
+            </div>
+
+            <!-- Password input -->
+            <div class="form-outline mb-4">
+              <input type="password" id="form3Example4" class="form-control" name="password" placeholder="Password" />
+              
+            </div>
+
+            <!-- Redirect to login -->
+            <div class="text-center">
+                <p>Already have an account? <a href="/login" class="text-primary fw-bold">Login</a></p>
+              </div>
+
+
+            <!-- Submit button -->
+            <div  class="text-center"  style="color: #44006b;">
+                <button type="submit" class="btn btn-primary mb-4 text-center"  style="background-color: #44006b;border-color: #44006b;">
+                    Sign up
+                  </button>
+            </div>
+            
+               
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1 ">
+                    <i class="fab fa-google" style="color: #44006b;"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      /* overflow-y: hidden; */
+    }
+    /* Add your custom styles here */
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(650px circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(1250px circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
+
+    #radius-shape-1 {
+      height: 220px;
+      width: 220px;
+      top: -60px;
+      left: -130px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+      bottom: -60px;
+      right: -110px;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    .signin-container {
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+      border-radius: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .signin-container:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.787);
+    }
+
+    .btn-outline-light {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome JS (optional) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <title>SignIn</title>
+</head>
+
+<body>
+  <!-- Section: Design Block -->
+  <section class="background-radial-gradient overflow-hidden">
+    <div class="container px-4 py-5 px-md-5 text-center text-lg-start my-5">
+      <div class="row gx-lg-5 align-items-center mb-5">
+        <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+          <h1 class="my-5 display-5 fw-bold ls-tight" style="color: hsl(218, 81%, 95%)">
+            <span style="text-align: center;">SnapSeats</span>
+          </h1>
+          <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+            Embark on a journey of simplicity and convenience with our bus booking platform – where every click takes you closer to your next adventure.
+          </p>
+        </div>
+
+        <div class="col-lg-6 mb-5 mb-lg-0 position-relative">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+
+          <div class="card bg-glass "style="border-radius: 1rem;">
+            <div class="card-body px-4 py-5 px-md-5 signin-container">
+              <form>
+                <!-- 2 column grid layout with text inputs for the first and last names -->
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1" class="form-control" placeholder="Name" />
+                     
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example2" class="form-control" placeholder="contact" />
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Email input -->
+                <div class="form-outline mt-3 mb-5">
+                  <input type="email" id="form3Example3" class="form-control" placeholder="Email address" />
+                  
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-4">
+                  <input type="password" id="form3Example4" class="form-control" placeholder="Password" />
+                  
+                </div>
+
+                <!-- Redirect to login -->
+                <div class="text-center">
+                    <p>Already have an account? <a href="/login" class="text-primary fw-bold">Login</a></p>
+                  </div>
+  
+
+                <!-- Submit button -->
+                <div  class="text-center"  style="color: #44006b;">
+                    <button type="submit" class="btn btn-primary mb-4 text-center"  style="background-color: #44006b;border-color: #44006b;">
+                        Sign up
+                      </button>
+                </div>
+                
+
+                <!-- Register buttons -->
+                <div class="text-center">
+                  <p>or sign up with:</p>
+                  <button type="button" class="btn btn-link btn-floating mx-1 ">
+                    <i class="fab fa-google" style="color: #44006b;"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</body>
+
+</html>
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d

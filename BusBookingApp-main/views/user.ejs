@@ -1,0 +1,198 @@
+<!-- FILEPATH: /home/madhu/BusBooking/views/admin.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<<<<<<< HEAD
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+=======
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+   
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+      .bus-btn {
+          color: white;
+          text-decoration: none;
+          background-color: rgb(0, 102, 255);
+      }
+<<<<<<< HEAD
+      .availibility {
+    border: 1px solid rgb(43, 131, 43);
+    background-color: rgb(43, 131, 43);
+    color: white;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .availibility:hover {
+    background-color: rgb(43, 131, 43);
+    color: #fff;
+    cursor: auto; /* Set the cursor to auto on hover */
+  }
+=======
+  
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+      .bus-btn:hover {
+background-color: rgb(0, 87, 168);
+}
+  </style>
+  
+<<<<<<< HEAD
+    <title>SnapSeats</title>
+=======
+    <title>User</title>
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top py-3">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- <form class="d-flex mt-2" role="search">
+            <input class="form-control me-4" type="search" placeholder="Search" aria-label="Search" >
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+<<<<<<< HEAD
+          <form action="/logout" method="post">
+            <button class="btn btn-outline-success">LogOut</button>
+         
+          </form>
+=======
+          <button class="btn btn-outline-success">LogOut</button>
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+          
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">User</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/user">Buses Schedule</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/user/trips">Your trips</a>
+                </li>
+                <!-- <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                  </ul>
+                </li>
+              </ul>
+              
+            </div>
+          </div>
+        </div>
+      </nav>
+
+     
+
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+
+      <div class="container my-5" style="border: 1px solid rgb(0, 102, 255);padding: 1%;border-radius: 10px;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <div class="row w-100" >
+          <!-- Your EJS template file (e.g., index.ejs) -->
+<<<<<<< HEAD
+          <form class="row" method="post" action="/search_bus" >
+=======
+          <form class="row">
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+            <div class="col-4">
+              <label for="source" class="form-label" >Source :</label>
+              <input type="text" class="form-control" id="source" name="source" placeholder="Enter source">
+            </div>
+      
+            <div class="col-4">
+              <label for="source" class="form-label" >Destination:</label>
+              <input type="text" class="form-control" id="destination" name="destination" placeholder="Enter destination">
+            </div>
+      
+            <div class="col-3">
+              <label for="source" class="form-label" >Departure Date :</label>
+              <input type="date" class="form-control" id="departureDate" name="departureDate" min="<%= new Date().toISOString().split('T')[0] %>">
+            </div>
+      
+            <!-- Other form fields... -->
+      
+            <div class="col-1">
+              <label for="departureDate" class="form-label" style="color: white;">D</label>
+
+              <button type="submit" class="btn btn-primary">Search </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      
+
+<<<<<<< HEAD
+      <% if (search_bus_list.length > 0) { %>
+        <% search_bus_list.forEach(function(search_bus_listt){ %>
+          <form action="/user/chooseseat" method="post">
+        <div class="container">
+          <div class="bus-card my-5">
+            <div class="bus-details">
+              <div class="bus-title"><%=search_bus_listt.bus_no%></div>
+              <div class="bus-route"><%=search_bus_listt.src%> to <%=search_bus_listt.dest%></div>
+              <div class="bus-time">Duration : <%=search_bus_listt.journey_time%></div>
+              <div class="bus-time">Fare : <%=search_bus_listt.fare%></div>
+              
+              <div class="bus-time" >Distance : <%=search_bus_listt.distance%></div>
+              
+              <div class="bus-available-days" value="<%=search_bus_listt.route_id%>" >Available-date: <%=search_bus_listt.journey_date%></div>
+              <div class="availibility" style="background: <%= color %>;color:black; ">
+                Available
+              </div>
+              
+            </div>
+            <!-- <a href="/delete" class="bus-btn">Delete Bus</a> -->
+            
+            <!-- <button type="button" style="visibility: hidden;" class="bus-btn" name="route_id" value="<%=search_bus_listt.route_id%>" >Book Bus</button>
+             -->
+            <button type="submit"class="bus-btn" name="card_id" value="[<%=search_bus_listt.bus_no%>,<%=search_bus_listt.route_id%>]" >Book Bus</button>
+          </div>
+        </div>
+      </form>
+        <% })} %>
+       
+
+=======
+       <div class="container">
+        <div class="bus-card ">
+          <div class="bus-details">
+            <div class="bus-title">Bus to Destination</div>
+            <div class="bus-route">Route: Source to Destination</div>
+            <div class="bus-time">Departure Time: 10:00 AM</div>
+            <div class="bus-time">Fare : 1000 rupees</div>
+            <div class="bus-available-days">Available Days: Monday, Wednesday, Friday</div>
+          </div>
+          <a href="/user/seating" class="bus-btn" >Book Now</a>
+        </div>
+      </div>
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
+      
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+
+</html>

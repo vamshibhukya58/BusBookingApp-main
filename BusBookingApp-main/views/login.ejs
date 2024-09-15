@@ -1,0 +1,285 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Add your custom styles here */
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-y: hidden;
+    }
+
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(80vw circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(100vw circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
+
+    #radius-shape-1 {
+      height: 40vw;
+      width: 40vw;
+      top: -20vw;
+      left: -35vw;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 25% 40% 40% 25% / 70% 33% 67% 30%;
+      bottom: -20vw;
+      right: -30vw;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    .login-container {
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+      border-radius: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .login-container:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.787);
+    }
+
+    .btn-outline-light {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome JS (optional) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <title>SnapSeats</title>
+</head>
+
+<body>
+  <!-- Section: Design Block -->
+  <section class="background-radial-gradient overflow-hidden">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center align-items-center">
+
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 ">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+
+            <div class="card-body p-5 text-center login-container">
+
+              <div>
+
+                <h2 class=" mb-2 text-uppercase">Login</h2>
+                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+                <form action="/login" method="post">
+                  <div class="form-outline form-white">
+                    <input type="email" id="email" class="form-control form-control-lg mb-5" name="email" placeholder="Email" style="margin-top: 3%;" />
+                  </div>
+  
+                  <div class="form-outline form-white mb-4">
+                    <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" name="password" />
+                  </div>
+  
+
+
+                  <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+                </form>
+               
+
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                  <a href="#!" class="text-white mb-3"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="mb-0">Don't have an account? <a href="/signup" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</body>
+
+</html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* Add your custom styles here */
+    body {
+      margin: 0;
+      overflow-x: hidden; /* Hide horizontal scrollbar */
+      overflow-y: hidden;
+    }
+
+    .background-radial-gradient {
+      background-color: hsl(218, 41%, 15%);
+      background-image: radial-gradient(80vw circle at 0% 0%,
+          hsl(218, 41%, 35%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%),
+        radial-gradient(100vw circle at 100% 100%,
+          hsl(218, 41%, 45%) 15%,
+          hsl(218, 41%, 30%) 35%,
+          hsl(218, 41%, 20%) 75%,
+          hsl(218, 41%, 19%) 80%,
+          transparent 100%);
+    }
+
+    #radius-shape-1 {
+      height: 40vw;
+      width: 40vw;
+      top: -20vw;
+      left: -35vw;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    #radius-shape-2 {
+      border-radius: 25% 40% 40% 25% / 70% 33% 67% 30%;
+      bottom: -20vw;
+      right: -30vw;
+      width: 50vw;
+      height: 50vw;
+      background: radial-gradient(#44006b, #ad1fff);
+      overflow: hidden;
+    }
+
+    .bg-glass {
+      background-color: hsla(0, 0%, 100%, 0.9) !important;
+      backdrop-filter: saturate(200%) blur(25px);
+    }
+    .login-container {
+      /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); */
+      border-radius: 1rem;
+      transition: box-shadow 0.3s ease-in-out;
+    }
+
+    .login-container:hover {
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.787);
+    }
+
+    .btn-outline-light {
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .btn-outline-light:hover {
+      background-color: #f8f9fa;
+    }
+  </style>
+
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Font Awesome JS (optional) -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+
+  <title>LogIn</title>
+</head>
+
+<body>
+  <!-- Section: Design Block -->
+  <section class="background-radial-gradient overflow-hidden">
+    <div class="container py-5">
+      <div class="row d-flex justify-content-center align-items-center">
+
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5 ">
+          <div id="radius-shape-1" class="position-absolute rounded-circle shadow-5-strong"></div>
+          <div id="radius-shape-2" class="position-absolute shadow-5-strong"></div>
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+
+            <div class="card-body p-5 text-center login-container">
+
+              <div>
+
+                <h2 class=" mb-2 text-uppercase">Login</h2>
+                <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+                <div class="form-outline form-white">
+                  <input type="email" id="email" class="form-control form-control-lg mb-5" placeholder="Email" style="margin-top: 3%;" />
+                </div>
+
+                <div class="form-outline form-white mb-4">
+                  <input type="password" id="password" class="form-control form-control-lg" placeholder="Password" />
+                </div>
+
+                <p class="small"><a class="text-white-50" href="#!">Forgot password?</a></p>
+
+                <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+                <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                  <a href="#!" class="text-white mb-3"><i class="fab fa-google fa-lg"></i></a>
+                </div>
+
+              </div>
+
+              <div>
+                <p class="mb-0">Don't have an account? <a href="/signup" class="text-white-50 fw-bold">Sign Up</a>
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+</body>
+
+</html>
+>>>>>>> f9cc5f809a1e81f526608b318e85767bf8c1458d
